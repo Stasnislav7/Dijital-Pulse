@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    background: #fafafa;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    transition: background-color 0.3s, color 0.3s;
+}
+a {
+    text-decoration: none;
+    transition: color 600ms ease;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    width: 90%;
+    padding: 20px 5%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+header > .logo {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+header > .nav {
+    display: flex; 
+    justify-content: space-between;  
+    align-items: center;
+}
+
+header > .nav a {
+    margin: 0 15px;
+    display: inline-block;
+    color: #a3a3a3;  
+}
+header > .menu i:hover,
+header > .nav a:hover {
+    color: #4f4e4e;
+}
+
+header .btn_theme {
+    font-size: 40px;
+    background-color: white;
+    color: #1f1f1f ;
+    border:none;
+    position: absolute;
+    padding: 5px;
+    margin-left: 80%;
+    cursor:pointer;
+
+    
+}
+header > .menu i  {
+    cursor: pointer;
+    color: #a3a3a3;
+    font-size: 50px;
+}
+
+
+.bg-fixed ,
+.full-page {
+    height: 95vh;
+    background: url("../img/photo2.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #3b3b3b;
+    text-align: center;
+    color: #fff;
+}
+
+.full-page h1 {
+    padding-top: 250px;
+    font-size: 45px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.full-page h3 {
+    margin: 20px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: background 600ms ease;
+}
+
+.bg-fixed button i,
+.full-page button i {
+    margin-left: 5px;
+    transition: margin 600ms ease; 
+    text-align:center;
+    position: relative;
+    top:1px;
+}
+
+.full-page button,
+.bg-fixed button {
+    padding: 15px 25px;
+    border-radius: 5px;
+    border:0; 
+    font-size: 15px;
+    cursor: pointer;
+    background: #ffc107;
+    color: #774404;
+    font-weight:500;
+    text-align: center;
+}
+
+.full-page button:hover ,
+.bg-fixed button:hover {
+    background: #ff9800;
+}
+
+.full-page button:hover i,
+.bg-fixed button:hover i {
+    margin-left: 15px;
+    color:#fff;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.features > div {
+    width: 300px;
+    text-align: center;
+    margin: 50px 10px;
+}
+.features > div img { 
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.features > div h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #454545;
+}
+.features > div p {
+    font-weight: 200;
+}
+
+.gallery {
+    width: 70%;
+    margin: 50px 15%;
+    position: relative;
+    left:75px;
+}
+
+.gallery .arrow-prev,
+.gallery .arrow-next {
+    font-size: 10px;
+    position: absolute;
+    transition: all 600ms ease;
+}
+
+.gallery .arrow-prev {
+    font-size:40px;
+    left:-50px;
+    top:75px;
+}
+
+.gallery .arrow-next {
+    font-size:40px;
+    right:-10px;
+    top:75px;
+}
+
+.gallery #slider div {
+    margin-top: 10px;
+    margin-right: 60px;
+}
+.gallery #slider img {
+    width:300px;
+    height:200px;
+}
+
+.bg-fixed {
+    height:300px;
+    color: #333;
+}
+
+.bg-fixed h3 {
+    font-size: 25px;
+    padding-top: 130px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.bg-fixed input {
+    padding: 14px  20px;
+    width: 300px;
+    font-size: 14px;
+    border: 0;
+    border-radius:5px;
+    background: #fafafa;
+}
+
+.fixed {
+    position: sticky;
+    top:0;
+    left: 0;
+    border-bottom: 2px solid silver;
+    z-index:9;
+}
+
+#hidden-menu {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    background: #fff;
+    z-index: 10;
+    text-align: center;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.4s ease-in-out;
+}
+
+#hidden-menu .close {
+    color: #121212;
+    font-size: 40px;
+    float: right;
+    margin-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+#hidden-menu .close i:hover {
+    color: #888;
+}
+
+#hidden-menu h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+#hidden-menu ul {
+    list-style: none;
+    padding: 0;
+}
+#hidden-menu ul li {
+    font-size: 18px;
+    color: #444;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+#hidden-menu ul li a:hover {
+    color: #ff9800;
+}
+
+.header .menu i {
+    cursor: pointer;
+    color: #444;
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}
+
+.header .menu i:hover {
+    color: #ff9800;
+    transform: rotate(90deg);
+}
+/* Dark Theme */
+body.dark_theme {
+    background-color: #121212;
+    color: #fff;
+}
+
+header.dark_theme {
+    background-color: #1f1f1f;
+}
+
+header.logo.dark_theme {
+    color: #fff;
+}
+
+.nav a.dark_theme {
+    color: #fff;
+}
+
+#hidden-menu.dark_theme {
+    background-color: #333;
+}
+
+#hidden-menu ul li a.dark_theme {
+    color: #fff;
+}
+#hidden-menu ul li a.dark_theme:hover {
+    color: #dddddd7d;
+}
+#hidden-menu h2.dark_theme {
+    color:#fff;
+}
+
+footer.dark_theme {
+    background-color: #1f1f1f;
+}
+
+footer i.dark_theme {
+    color: #fff;
+}
+
+footer .social i.dark_theme {
+    color: #fff;
+}
+
+footer .up-button i.dark_theme {
+    color: #fff;
+}
+
+.btn_theme.dark_theme {
+    font-size: 40px;
+    background-color: #1f1f1f;
+    color: white ;
+    border:none;
+    position: absolute;
+    padding: 5px;
+    margin-left: 80%;
+    cursor:pointer;
+
+}
+
+p.dark_theme {
+    color: #fff;
+}
+div h4.dark_theme {
+    color: #fff;
+
+}
+a.dark_theme {
+    color: #ddd;
+}
+
+i.dark_theme,
+h4.dark_theme {
+    color: #fff;
+}
+
+footer {
+    width: 90%;
+    padding: 50px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .up-button,
+footer .social div {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1px solid silver;
+    cursor: pointer;
+    color: #3b3b3b;
+    transition: transform 600ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .up-button:hover,
+footer .social div:hover {
+    transform: translateY(-10px);
+}
+
+footer .social {
+    display: flex;
+    align-items: center;
+}
+
+footer .social div {
+    margin-left: 15px; /* Space between social icons */
+}
+
+footer p {
+    color: #3b3b3b;
+    font-size: 14px;
+}
