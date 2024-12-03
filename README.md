@@ -31,12 +31,12 @@ Digital Pulse is a modern and responsive website template designed for showcasin
    git clone https://github.com/your-username/digital-pulse.git
 Navigate to the project directory:
 bash
-Копировать код
+
 cd digital-pulse
 Open index.html in your preferred browser.
 File Structure
 plaintext
-Копировать код
+
 digital-pulse/
 ├── css/
 │   ├── style.css        # Main stylesheet
